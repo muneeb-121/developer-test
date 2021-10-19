@@ -23,7 +23,7 @@ export class UsersService {
   }
 
   async update(id: string, user: UpdateUserDto): Promise<User> {
-    return await this.userModel.findByIdAndUpdate(id, user);
+    return await this.userModel.findByIdAndUpdate(id, user, { new: true });
   }
 
   async remove(id: string): Promise<User> {
