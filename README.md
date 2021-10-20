@@ -29,6 +29,8 @@ Run
 
     docker build . -t dev-test/app
     docker-compose up
+    
+ Api can be accessed at http://localhost:3000
 # API
 Resources
 
